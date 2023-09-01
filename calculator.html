@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/calculator.css" />
+    <title>Calculator • Carbon Footprint Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Carbon <br />
+        Footprint <br />Calculator
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li>
+            <a href="news.html">News</a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="https://eltfootprint.org/wp-content/uploads/2019/12/Main-Logo-768x362.png"
+        alt="footprint"
+      />
+    </header>
+    <main>
+      <div id="form">
+        <table id="table">
+          <tr class="table-row">
+            <td class="table-label-cell">
+              <label for="electic-bill">Enter your monthly electic bill</label>
+            </td>
+            <td class="table-input-cell">
+              <input type="text" id="electric-bill" name="electric-bill" />
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-label-cell">
+              <label for="gas-bill">Enter your monthly gas bill</label>
+            </td>
+            <td class="table-input-cell">
+              <input type="text" id="gas-bill" name="gas-bill" />
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-label-cell">
+              <label for="oil-bill">Enter your monthly oil bill</label>
+            </td>
+            <td class="table-input-cell">
+              <input type="text" id="oil-bill" name="oil-bill" />
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-label-cell">
+              <label for="car-mileage">Enter your yearly mileage of car</label>
+            </td>
+            <td class="table-input-cell">
+              <input type="text" id="car-mileage" name="car-mileage" />
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-label-cell">
+              <label for="four-hr-or-less-flights"
+                >Enter number of flights you’ve taken in the past year (4 hours
+                or less)</label
+              >
+            </td>
+            <td class="table-input-cell">
+              <input
+                type="text"
+                id="four-hr-or-less-flights"
+                name="four-hr-or-less-flights"
+              />
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-label-cell">
+              <label for="more-than-four-hr-flights"
+                >Enter number of flights you’ve taken in the past year (more
+                than 4 hours)</label
+              >
+            </td>
+            <td class="table-input-cell">
+              <input
+                type="text"
+                id="more-than-four-hr-flights"
+                name="more-than-four-hr-flights"
+              />
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-label-cell">
+              <label for="recycle-newspaper">Do you recycle newspaper?</label>
+            </td>
+            <td class="table-input-cell">
+              <input
+                type="checkbox"
+                id="recycle-newspaper"
+                name="recycle-newspaper"
+              />
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-label-cell">
+              <label for="recycle-aluminum-tin"
+                >Do you recycle aluminum and tin?</label
+              >
+            </td>
+            <td class="table-input-cell">
+              <input
+                type="checkbox"
+                id="recycle-aluminum-tin"
+                name="recycle-aluminum-tin"
+              />
+            </td>
+          </tr>
+        </table>
+        <div id="calc-btn-div">
+          <button id="calc-btn">Calculate</button>
+        </div>
+      </div>
+      <div id="result-el"></div>
+    </main>
+    <script src="scripts/calculator.js"></script>
+  </body>
+</html>
